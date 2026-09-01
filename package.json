@@ -1,0 +1,23 @@
+{
+  "name": "suno-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.suno.desktop",
+    "productName": "Suno",
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "dmg"
+    },
+    "files": ["main.js", "package.json"]
+  }
+}
