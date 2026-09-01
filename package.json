@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "main": "main.js",
+  "author": "Pranav Raut <pranavraut033@gmail.com>",
+  "description": "Tiny unofficial desktop wrapper for suno.com",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --mac"
+    "build": "electron-builder --mac",
+    "build:mac-x64": "electron-builder --mac --x64",
+    "build:linux": "electron-builder --linux"
   },
   "devDependencies": {
     "electron": "^33.0.0",
@@ -17,6 +21,13 @@
     "mac": {
       "category": "public.app-category.music",
       "target": "dmg"
+    },
+    "linux": {
+      "category": "AudioVideo",
+      "target": ["AppImage", "deb"]
+    },
+    "win": {
+      "target": "nsis"
     },
     "files": ["main.js", "package.json"]
   }
