@@ -1,3 +1,4 @@
 node_modules/
 dist/
+ci-artifacts/
 .DS_Store

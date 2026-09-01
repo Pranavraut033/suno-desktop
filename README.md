@@ -9,12 +9,16 @@ feature works because it's simply the actual web app.
 
 ## Install
 
-Download the latest `.dmg` from [Releases](../../releases), open it, and
-drag **Suno.app** to Applications.
+Download the build for your platform from [Releases](../../releases):
 
-The app is unsigned (no Apple Developer certificate), so the first launch
-will be blocked by Gatekeeper. Right-click the app → **Open** → **Open**
-to bypass this one-time warning.
+- **macOS** (Apple Silicon or Intel): the `.dmg`, then drag **Suno.app** to Applications
+- **Windows**: `Suno.Setup.1.0.0.exe`
+- **Linux**: the `.AppImage` (make it executable first) or the `.deb`
+
+Builds are unsigned/unnotarized, so the OS will warn on first launch:
+- **macOS**: right-click the app → **Open** → **Open**
+- **Windows**: click **More info** → **Run anyway** on the SmartScreen prompt
+- **Linux AppImage**: `chmod +x Suno-1.0.0.AppImage` before running
 
 ## Build from source
 
